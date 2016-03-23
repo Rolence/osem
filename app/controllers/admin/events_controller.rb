@@ -178,6 +178,7 @@ module Admin
     end
 
     def comment_params
+      #fixed issue #889
       params.require(:comment).permit(:commentable, :body, :user_id)
     end
 
